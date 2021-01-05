@@ -1,8 +1,7 @@
 import Link from 'next/link'
 
 const links = [
-  { href: 'https://github.com/vercel/next.js', label: 'GitHub' },
-  { href: 'https://nextjs.org/docs', label: 'Docs' },
+  { href: 'https://github.com/pranavp10/pranavp10.now.sh', label: 'GitHub' },
 ]
 
 export default function Nav() {
