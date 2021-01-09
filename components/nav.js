@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-expressions */
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import DarkModeSwitch from './darkModeSwitch';
 
 export default function Nav() {
   const [top, setTop] = useState(true);
@@ -97,6 +98,9 @@ export default function Nav() {
                 >
                   About
                 </a>
+              </li>
+              <li>
+                <DarkModeSwitch />
               </li>
             </ul>
           </nav>

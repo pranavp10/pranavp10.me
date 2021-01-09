@@ -13,19 +13,19 @@ export default function Hero() {
               </h1>
               <div className="max-w-3xl mx-auto">
                 <p
-                  className="text-md text-gray-600 mb-8"
+                  className="text-md text-gray-600 mb-8 dark:text-gray-400"
                   data-aos="zoom-y-out"
                   data-aos-delay="150"
                 >
                   I'm a forntend developer, technical writer, motivation
                   speaker. Building <b className="text-gray-900">Q</b>uze which
-                  is going to effect million of students
+                  is going to effect millions of students
                 </p>
               </div>
               <div className="max-w-sm mx-auto px-4 flex space-x-3 mb-4 text-sm font-medium h-10">
                 <div className="flex-auto flex space-x-3">
                   <button
-                    className="w-1/2 flex items-center justify-center rounded-md bg-black text-white"
+                    className="w-1/2 flex items-center justify-center rounded-md dark:bg-white dark:text-black bg-black text-white"
                     type="button"
                   >
                     More about me
