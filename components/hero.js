@@ -3,8 +3,8 @@ export default function Hero() {
     <div>
       <section className="relative">
         <div className="max-w-xl mx-auto px-4 sm:px-6">
-          <div className="pt-32 pb-12 md:pt-40 md:pb-20">
-            <div className="text-center pb-12 md:pb-16">
+          <div className="pt-32 md:pt-40">
+            <div className="text-center ">
               <h1
                 className="text-5xl font-extrabold leading-tighter tracking-tighter mb-4"
                 data-aos="zoom-y-out"
@@ -13,12 +13,13 @@ export default function Hero() {
               </h1>
               <div className="max-w-3xl mx-auto">
                 <p
-                  className="text-md text-gray-600 mb-8 dark:text-gray-400"
+                  className="text-md text-gray-600 mb-8 dark:text-gray-100"
                   data-aos="zoom-y-out"
                   data-aos-delay="150"
                 >
                   I'm a forntend developer, technical writer, motivation
-                  speaker. Building <b className="text-gray-900">Q</b>uze which
+                  speaker. Building{' '}
+                  <b className="text-gray-900 dark:text-gray-100">Q</b>uze which
                   is going to effect millions of students
                 </p>
               </div>
