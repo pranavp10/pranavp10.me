@@ -1,5 +1,22 @@
 {
   "extends": [
     "wesbos"
-  ]
+  ],
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          [
+            "@/components",
+            "./components"
+          ],
+          [
+            "@/styles",
+            "./styles"
+          ],
+        ]
+      }
+    }
+  }
+
 }

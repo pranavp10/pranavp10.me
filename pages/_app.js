@@ -1,9 +1,9 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import '../styles/index.css';
+import '@/styles/index.css';
 import PropTypes from 'prop-types';
 import { ThemeProvider } from 'next-themes';
 import Head from 'next/head';
-import Nav from '../components/nav';
+import Nav from '@/components/nav';
 
 function MyApp({ Component, pageProps }) {
   return (
