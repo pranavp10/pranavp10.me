@@ -16,7 +16,7 @@ export default function Home() {
     <button
       aria-label="Toggle Dark Mode"
       type="button"
-      className="bg-gray-200 dark:bg-gray-800 rounded p-2 h-8 w-8"
+      className="bg-gray-100 dark:bg-gray-800 rounded p-2 h-8 w-8"
       onClick={switchTheme}
     >
       {isMounted && (
