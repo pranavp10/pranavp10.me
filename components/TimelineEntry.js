@@ -34,6 +34,6 @@ export default function TimelineEntry({
 TimelineEntry.propTypes = {
   children: PropTypes.node,
   title: PropTypes.string,
-  Icon: PropTypes.node,
+  Icon: PropTypes.any,
   tint: PropTypes.string,
 };
