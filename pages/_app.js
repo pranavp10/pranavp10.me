@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { ThemeProvider } from 'next-themes';
 import Head from 'next/head';
 import Nav from '@/components/nav';
+import Footer from '@/components/footer';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -14,6 +15,7 @@ function MyApp({ Component, pageProps }) {
       <div className="flex flex-col min-h-screen overflow-hidden">
         <Nav />
         <Component {...pageProps} />
+        <Footer />
       </div>
     </ThemeProvider>
   );
