@@ -29,28 +29,28 @@ export default function Nav() {
           <nav className="md:flex md:flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
-                <a
-                  href="/learning"
-                  className="px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
-                >
-                  Learning
-                </a>
+                <Link href="/learning">
+                  <a className="px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">
+                    Learning
+                  </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/blog"
-                  className="px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
-                >
-                  Blog
-                </a>
+                <Link href="/blog">
+                  <a
+                    href="/blog"
+                    className="px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                  >
+                    Blog
+                  </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/about"
-                  className="px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
-                >
-                  About
-                </a>
+                <Link href="/about">
+                  <a className="px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">
+                    About
+                  </a>
+                </Link>
               </li>
               <li>
                 <DarkModeSwitch />

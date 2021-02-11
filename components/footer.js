@@ -1,7 +1,7 @@
 import { AiFillGithub, AiOutlineTwitter } from 'react-icons/ai';
 
 const Footer = () => (
-  <div className="">
+  <div className="h-screen">
     <footer className="footer max-w-3xl m-auto px-10 pb-5">
       <div className="divide-y pb-4">
         <div />
