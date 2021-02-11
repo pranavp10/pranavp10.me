@@ -18,10 +18,8 @@ const Container = ({ children }) => {
   Router.events.on('routeChangeError', () => NProgress.done());
 
   return (
-    <div className="mx-6 pt-15 minHightResize">
-      <div className="mt-15">
-        <div className="max-w-screen-xl m-auto">{children}</div>
-      </div>
+    <div className="minHightResize relative">
+      <main className="max-w-3xl mx-auto px-6">{children}</main>
     </div>
   );
 };
