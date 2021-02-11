@@ -1,23 +1,27 @@
+const { fontFamily } = require('tailwindcss/defaultTheme');
+
 module.exports = {
+  purge: ['./src/pages/**/*.js', './src/components/**/*.js', './src/utils/ColorTint.js'],
   future: {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
-  purge: [
-    './components/**/*.{js,ts,jsx,tsx}',
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './utils/getTint.js',
-  ],
-  darkMode: 'class', // 'media' or 'class'
+  darkMode: 'class',
   theme: {
     extend: {
-      colors: {
-        'accent-1': '#333',
+      fontFamily: {
+        sans: ['Inter', ...fontFamily.sans],
       },
     },
   },
   variants: {
-    extend: {},
+    animation: ['responsive', 'motion-safe', 'motion-reduce'],
+    extend: {
+      backgroundColor: ['disabled', 'hover', 'focus', 'active'],
+      textColor: ['disabled', 'hover', 'focus'],
+      borderColor: ['disabled', 'hover', 'focus'],
+      cursor: ['disabled', 'hover', 'focus'],
+    },
   },
   plugins: [],
 };

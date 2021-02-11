@@ -3,14 +3,29 @@
     "baseUrl": ".",
     "paths": {
       "@/components/*": [
-        "components/*"
+        "src/components/*"
       ],
       "@/styles/*": [
-        "styles/*"
+        "src/styles/*"
+      ],
+      "@/lib/*": [
+        "src/lib/*"
       ],
       "@/utils/*": [
-        "utils/*"
-      ]
+        "src/utils/*"
+      ],
+      "@/globalState/*": [
+        "src/globalState/*"
+      ],
+      "@/config/*": [
+        "src/config/*"
+      ],
+      "@/hooks/*": [
+        "src/hooks/*"
+      ],
+      "@/api/*": [
+        "src/api/*"
+      ],
     }
   }
 }
