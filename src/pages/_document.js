@@ -21,7 +21,7 @@ export default class Document extends NextDocument {
           <link href="/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
           <link href="/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
           <link href="/favicons/site.webmanifest" rel="manifest" />
-          <link color="#5bbad5" href="/favicons/safari-pinned-tab.svg" rel="mask-icon" />
+          <link color="#000000" href="/favicons/safari-pinned-tab.svg" rel="mask-icon" />
           <link href="/favicons/favicon.ico" rel="shortcut icon" />
           <meta content="en_US" property="og:locale" />
           <meta content="#000000" name="theme-color" />
