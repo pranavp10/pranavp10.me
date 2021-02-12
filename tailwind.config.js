@@ -1,7 +1,7 @@
 const { fontFamily } = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  purge: ['./src/pages/**/*.js', './src/components/**/*.js', './src/utils/ColorTint.js'],
+  purge: ['./src/pages/**/*.js', './src/components/**/*.js', './src/utils/getTint.js'],
   future: {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
