@@ -3,7 +3,7 @@ import Link from 'next/link';
 import PropTypes from 'prop-types';
 
 const BlogPost = ({ title, summary, slug, publishedAt }) => (
-  <Link href={`/blog/${slug}`}>
+  <Link href={`/learning/${slug}`}>
     <div className="mt-6">
       <div className="px-10 py-6 bg-white rounded-lg shadow-md">
         <div className="flex justify-between items-center">
