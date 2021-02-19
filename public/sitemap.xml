@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://pranavp10.now.sh/about</loc>
+  </url>
+
+  <url>
     <loc>https://pranavp10.now.sh/blog</loc>
   </url>
 
@@ -9,6 +13,14 @@
   </url>
 
   <url>
+    <loc>https://pranavp10.now.sh/learning</loc>
+  </url>
+
+  <url>
     <loc>https://pranavp10.now.sh/blog/[slug]</loc>
+  </url>
+
+  <url>
+    <loc>https://pranavp10.now.sh/learning/[slug]</loc>
   </url>
 </urlset>
