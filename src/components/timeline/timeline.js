@@ -16,12 +16,13 @@ export default function Timeline() {
       <DateEntry title="2021" />
       <TimeLineEntry title="My Learning Path" Icon={GiPathDistance} tint="gray">
         <p className="text-gray-700 dark:text-gray-400">
-          Launching person website which is built using tailwind css and next js
+          Defining my all my learning so that it will helps other, how I started my learning.
         </p>
       </TimeLineEntry>
       <TimeLineEntry title="Personal Blog" Icon={BiSpreadsheet} tint="gray">
         <p className="text-gray-700 dark:text-gray-400">
-          Launching person website which is built using tailwind css and next js
+          This was in my mind long back in when I was in my collage but it came into existence this
+          year.
         </p>
       </TimeLineEntry>
       <TimeLineEntry title="Personal Website" Icon={AiOutlineGlobal} tint="gray">
