@@ -2,7 +2,8 @@ import { FaLaptopCode, FaGraduationCap, FaMobileAlt, FaBoxOpen } from 'react-ico
 import { AiOutlineCode, AiOutlineGlobal } from 'react-icons/ai';
 import { IoNewspaper } from 'react-icons/io5';
 import { SiVisualstudiocode } from 'react-icons/si';
-import { BiBuildings } from 'react-icons/bi';
+import { BiBuildings, BiSpreadsheet } from 'react-icons/bi';
+import { GiPathDistance } from 'react-icons/gi';
 import DateEntry from './dateEntry';
 import TimeLineEntry from './timelineEntry';
 
@@ -13,7 +14,17 @@ export default function Timeline() {
         Timeline
       </h3>
       <DateEntry title="2021" />
-      <TimeLineEntry title="Personal Website" Icon={AiOutlineGlobal} tint="indigo">
+      <TimeLineEntry title="My Learning Path" Icon={GiPathDistance} tint="gray">
+        <p className="text-gray-700 dark:text-gray-400">
+          Launching person website which is built using tailwind css and next js
+        </p>
+      </TimeLineEntry>
+      <TimeLineEntry title="Personal Blog" Icon={BiSpreadsheet} tint="gray">
+        <p className="text-gray-700 dark:text-gray-400">
+          Launching person website which is built using tailwind css and next js
+        </p>
+      </TimeLineEntry>
+      <TimeLineEntry title="Personal Website" Icon={AiOutlineGlobal} tint="gray">
         <p className="text-gray-700 dark:text-gray-400">
           Launching person website which is built using tailwind css and next js
         </p>
