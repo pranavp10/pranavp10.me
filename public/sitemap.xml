@@ -13,14 +13,6 @@
   </url>
 
   <url>
-    <loc>https://pranavp10.now.sh/learning</loc>
-  </url>
-
-  <url>
     <loc>https://pranavp10.now.sh/blog/[slug]</loc>
-  </url>
-
-  <url>
-    <loc>https://pranavp10.now.sh/learning/[slug]</loc>
   </url>
 </urlset>
