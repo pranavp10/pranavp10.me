@@ -21,9 +21,11 @@ export default function Nav() {
       <div className="max-w-3xl mx-auto px-5 sm:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
           <div className="flex-shrink-0 mr-4">
-            <b>
-              <i>P10</i>
-            </b>
+            <Link href="/">
+              <b className="cursor-pointer">
+                <i>P10</i>
+              </b>
+            </Link>
           </div>
           <nav className="md:flex md:flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center">

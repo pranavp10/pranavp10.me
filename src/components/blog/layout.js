@@ -3,11 +3,7 @@ import { parseISO, format } from 'date-fns';
 import PropTypes from 'prop-types';
 
 const editUrl = (slug) =>
-  `https://github.com/leerob/pranavp10.now.sh/edit/main/data/blog/${slug}.mdx`;
-const discussUrl = (slug) =>
-  `https://mobile.twitter.com/search?q=${encodeURIComponent(
-    `https://pranavp10.now.sh/blog/${slug}`
-  )}`;
+  `https://github.com/pranavp10/pranavp10.now.sh/edit/main/data/blog/${slug}.mdx`;
 
 const BlogLayout = ({ children, frontMatter }) => (
   <div className="pt-32">
@@ -36,10 +32,6 @@ const BlogLayout = ({ children, frontMatter }) => (
       </div>
       <div className="prose dark:prose-dark max-w-none w-full">{children}</div>
       <div className="text-sm text-gray-700 dark:text-gray-300">
-        <a href={discussUrl(frontMatter.slug)} target="_blank" rel="noopener noreferrer">
-          Discuss on Twitter
-        </a>
-        {` • `}
         <a href={editUrl(frontMatter.slug)} target="_blank" rel="noopener noreferrer">
           Edit on GitHub
         </a>
