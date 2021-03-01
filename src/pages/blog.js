@@ -9,7 +9,7 @@ const Blog = ({ posts }) => {
   return (
     <div className="pt-32">
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
-        <div className="max-w-3xl pb-12 md:pb-20 text-center md:text-left">
+        <div className="max-w-3xl pb-8 md:pb-16 text-center md:text-left">
           <h1 className="text-5xl font-black">Blog</h1>
         </div>
         {filteredBlogPosts.map((frontMatter) => (
