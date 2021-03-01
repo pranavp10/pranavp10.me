@@ -13,7 +13,11 @@ const Blog = ({ posts }) => {
           <h1 className="text-5xl font-black">Blog</h1>
         </div>
         {filteredBlogPosts.map((frontMatter) => (
-          <BlogPost key={frontMatter.title} {...frontMatter} slug={`/blog/${frontMatter.slug}`} />
+          <BlogPost
+            key={frontMatter.title}
+            {...frontMatter}
+            slug={`learning/${frontMatter.slug}`}
+          />
         ))}
       </div>
     </div>
@@ -27,7 +31,7 @@ Blog.propTypes = {
 };
 
 export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter('blog');
+  const posts = await getAllFilesFrontMatter('learning');
 
   return { props: { posts } };
 }
