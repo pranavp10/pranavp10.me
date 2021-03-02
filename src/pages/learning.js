@@ -10,10 +10,18 @@ const Blog = ({ posts }) => {
     <div className="pt-32">
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
         <div className="max-w-3xl pb-8 md:pb-16 text-center md:text-left">
-          <h1 className="text-5xl font-black">Blog</h1>
+          <h1 className="text-5xl font-black">My Learning Book</h1>
+          <p className="text-gray-600 dark:text-gray-100 mt-4">
+            Welcome to my learning book. You will find all my learning documentation here, revise
+            every thing and started understanding
+          </p>
         </div>
         {filteredBlogPosts.map((frontMatter) => (
-          <BlogPost key={frontMatter.title} {...frontMatter} slug={`/blog/${frontMatter.slug}`} />
+          <BlogPost
+            key={frontMatter.title}
+            {...frontMatter}
+            slug={`learning/${frontMatter.slug}`}
+          />
         ))}
       </div>
     </div>
@@ -27,7 +35,7 @@ Blog.propTypes = {
 };
 
 export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter('blog');
+  const posts = await getAllFilesFrontMatter('learning');
 
   return { props: { posts } };
 }
