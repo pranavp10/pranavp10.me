@@ -7,7 +7,7 @@ const editUrl = (slug) =>
 
 const BlogLayout = ({ children, frontMatter }) => (
   <div className="pt-32">
-    <article className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
+    <article className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-12 w-full">
       <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
         {frontMatter.title}
       </h1>
@@ -31,10 +31,16 @@ const BlogLayout = ({ children, frontMatter }) => (
         </p>
       </div>
       <div className="prose dark:prose-dark max-w-none w-full">{children}</div>
-      <div className="text-sm text-gray-700 dark:text-gray-300">
-        <a href={editUrl(frontMatter.slug)} target="_blank" rel="noopener noreferrer">
-          Edit on GitHub
-        </a>
+      <div className="text-right mt-4 w-full">
+        <div className="text-sm text-gray-700 dark:text-gray-300">
+          <a
+            className="text-right"
+            href={editUrl(frontMatter.slug)}
+            target="_blank"
+            rel="noopener noreferrer">
+            Edit this page
+          </a>
+        </div>
       </div>
     </article>
   </div>
