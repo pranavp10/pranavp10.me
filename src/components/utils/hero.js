@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Hero() {
   return (
     <section>
@@ -21,11 +23,11 @@ export default function Hero() {
             </div>
             <div className="max-w-sm mx-auto px-4 flex space-x-3 mb-4 text-sm font-medium h-10">
               <div className="flex-auto flex space-x-3">
-                <button
-                  className="w-1/2 flex items-center justify-center rounded-md dark:bg-white dark:text-black bg-black text-white"
-                  type="button">
-                  More about me
-                </button>
+                <Link href="/about">
+                  <a className="w-1/2 flex items-center justify-center rounded-md dark:bg-white dark:text-black bg-black text-white">
+                    More about me
+                  </a>
+                </Link>
                 <a
                   href="https://github.com/pranavp10/pranavp10.now.sh"
                   target="_blank"
