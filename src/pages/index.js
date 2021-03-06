@@ -1,11 +1,12 @@
-import { Hero } from '@/components/utils';
+import { Hero, SEO } from '@/components/utils';
 import { Timeline } from '@/components/timeline';
 
 export default function Home() {
   return (
-    <div>
+    <>
+      <SEO />
       <Hero />
       <Timeline />
-    </div>
+    </>
   );
 }
