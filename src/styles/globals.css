@@ -124,3 +124,20 @@ input[type='text'], input[type='email'] {
 .step>h3 {
   @apply my-0;
 }
+
+.un {
+  display: inline-block;
+}
+
+.un::after {
+  content: '';
+  width: 0px;
+  height: 3px;
+  display: block;
+  @apply bg-blue-900 dark:bg-blue-300;
+  transition: 300ms;
+}
+
+.un:hover::after {
+  width: 100%;
+}
