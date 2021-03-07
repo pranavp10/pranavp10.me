@@ -1,6 +1,6 @@
 import hydrate from 'next-mdx-remote/hydrate';
 import { getFiles, getFileBySlug } from '@/components/blog/mdx';
-import { SEO } from '@/components/utils';
+import { NewsLetter, SEO } from '@/components/utils';
 import BlogLayout from '@/components/blog/layout';
 import MDXComponents from '@/components/blog/MDXComponents';
 import PropTypes from 'prop-types';
@@ -18,6 +18,7 @@ const Blog = ({ mdxSource, frontMatter }) => {
         slug={`/learning/${frontMatter.slug}`}
       />
       <BlogLayout frontMatter={frontMatter}>{content}</BlogLayout>
+      <NewsLetter />
     </>
   );
 };

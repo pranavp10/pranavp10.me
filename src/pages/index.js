@@ -1,4 +1,4 @@
-import { Hero, SEO } from '@/components/utils';
+import { Hero, SEO, NewsLetter } from '@/components/utils';
 import { Timeline } from '@/components/timeline';
 
 export default function Home() {
@@ -7,6 +7,7 @@ export default function Home() {
       <SEO />
       <Hero />
       <Timeline />
+      <NewsLetter />
     </>
   );
 }
