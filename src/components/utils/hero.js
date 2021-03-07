@@ -12,14 +12,14 @@ export default function Hero() {
               Hey, I’m Pranav
             </h1>
             <div>
-              <p
+              <h2
                 className="text-md text-gray-600 mb-8 dark:text-gray-100"
                 data-aos="zoom-y-out"
                 data-aos-delay="150">
                 I'm a frontend developer, technical writer, motivation speaker. Building{' '}
                 <b className="text-gray-900 dark:text-gray-100">Q</b>uze which is going to effect
                 millions of students
-              </p>
+              </h2>
             </div>
             <div className="max-w-sm mx-auto px-4 flex space-x-3 mb-4 text-sm font-medium h-10">
               <div className="flex-auto flex space-x-3">
