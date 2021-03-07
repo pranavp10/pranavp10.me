@@ -26,6 +26,18 @@ export default class Document extends NextDocument {
           <meta content="#000000" name="theme-color" />
           <meta content="#000000" name="msapplication-TileColor" />
           <meta content="/favicons/browserconfig.xml" name="msapplication-config" />
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-FP03PE9FDE" />
+          <script
+            // eslint-disable-next-line react/no-danger
+            dangerouslySetInnerHTML={{
+              __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer.push(arguments)}
+        gtag("js", new Date());
+        gtag("config", "G-FP03PE9FDE");
+    `,
+            }}
+          />
         </Head>
         <body className="bg-white text-black dark:bg-gray-900 dark:text-white">
           <Main />
