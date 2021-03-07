@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import { Hero, SEO } from '@/components/utils';
+import { SEO } from '@/components/utils';
 
 const About = () => (
   <>
-    <SEO BaseTitle="About Pranav | JavaScript, React, Design Systems." />
+    <SEO BaseTitle="About" />
     <div className="pt-32">
       <h1 className="text-5xl font-black">About Me</h1>
       <ul className="list-inside list-disc">

@@ -2,8 +2,8 @@ import { NextSeo } from 'next-seo';
 import PropTypes from 'prop-types';
 
 const SEO = ({
-  BaseTitle = `Pranav | JavaScript, React, Design Systems.`,
-  description = `I'm a frontend developer, technical writer, motivation speaker. Building Quze which is going to effect millions of students`,
+  BaseTitle = `Pranav`,
+  description = `I'm a frontend developer, technical writer, motivation speaker. JavaScript, React, Design Systems.`,
   imageUrl = 'https://pranavp10.me/static/portfolio.png',
   slug,
 }) => {
