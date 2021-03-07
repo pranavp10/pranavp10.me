@@ -17,7 +17,7 @@ const About = () => (
             href="https://nextjs.org/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 font-bold">
+            className="text-blue-900 font-bold dark:text-blue-300 un">
             Next js (The React Framework)
           </a>{' '}
           and{' '}
@@ -25,7 +25,7 @@ const About = () => (
             href="https://tailwindcss.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 font-bold">
+            className="text-blue-900 font-bold dark:text-blue-300 un">
             Tailwind css
           </a>{' '}
           and check out the list of{' '}
@@ -33,7 +33,7 @@ const About = () => (
             href="https://libraries.pranavp10.me/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 font-bold">
+            className="text-blue-900 font-bold dark:text-blue-300 un">
             Framework and Libraries
           </a>{' '}
           I have used till now.
@@ -48,7 +48,7 @@ const About = () => (
             href="https://github.com/searchkit/searchkit"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 font-bold">
+            className="text-blue-900 font-bold dark:text-blue-300 un">
             @searchkit
           </a>
           ,{' '}
@@ -56,7 +56,7 @@ const About = () => (
             href="https://github.com/LoginRadius/engineering-portal"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 font-bold">
+            className="text-blue-900 font-bold dark:text-blue-300 un">
             @LoginRadius
           </a>{' '}
           and planing to contribute to more open source project in the feature
@@ -64,7 +64,7 @@ const About = () => (
         <li className="text-gray-600 dark:text-gray-100 my-4">
           I always right down all my{' '}
           <Link href="/learning">
-            <a className="text-blue-500 font-bold">learning Process</a>
+            <a className="text-blue-900 font-bold dark:text-blue-300 un">learning Process</a>
           </Link>{' '}
           and share with the people so that it will help others to learn what I have learnt.
         </li>
