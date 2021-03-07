@@ -9,7 +9,7 @@ import TimeLineEntry from './timelineEntry';
 
 export default function Timeline() {
   return (
-    <div className="max-w-3xl mx-auto px-5 sm:px-10">
+    <div className="max-w-3xl mx-auto">
       <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
         Timeline
       </h3>
