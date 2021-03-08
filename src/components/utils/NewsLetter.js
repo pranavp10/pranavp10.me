@@ -1,5 +1,5 @@
 const NewsLatter = () => (
-  <div className="mb-16 mx-auto p-4">
+  <div className="mb-16 mx-auto sm:p-4">
     <div className="relative border border-gray-200 rounded-lg overflow-hidden sm:p-12 p-6">
       <h2 className="text-2xl font-bold leading-8 text-gray-900 dark:text-gray-100">
         Want to learn something new?
