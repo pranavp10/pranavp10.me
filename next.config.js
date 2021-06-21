@@ -1,5 +1,8 @@
 /* eslint-disable global-require */
 module.exports = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   webpack: (config, { dev, isServer }) => {
     if (isServer) {
       require('./scripts/generate-sitemap');
