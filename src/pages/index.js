@@ -7,7 +7,7 @@ export default function Home() {
       <SEO />
       <Hero />
       <Timeline />
-      <NewsLetter />
+      {/* <NewsLetter /> */}
     </>
   );
 }

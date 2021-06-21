@@ -18,7 +18,6 @@ const Blog = ({ mdxSource, frontMatter }) => {
         slug={`/learning/${frontMatter.slug}`}
       />
       <BlogLayout frontMatter={frontMatter}>{content}</BlogLayout>
-      <NewsLetter />
     </>
   );
 };

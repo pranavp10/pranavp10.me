@@ -29,7 +29,7 @@ export default function Nav() {
           </div>
           <nav className="md:flex md:flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
-              <li>
+              {/* <li>
                 <Link href="/learning">
                   <a className="px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">
                     Learning
@@ -44,7 +44,7 @@ export default function Nav() {
                     Blog
                   </a>
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/about">
                   <a className="px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">

@@ -68,9 +68,7 @@ export default function Timeline() {
         </p>
       </TimeLineEntry>
       <TimeLineEntry title="Graduation Year" Icon={FaGraduationCap} tint="gray">
-        <p className="text-gray-700 dark:text-gray-400">
-          I was really fascinated with my smartphone and then took the compute science as my course
-        </p>
+        <p className="text-gray-700 dark:text-gray-400">4 years of my life in nutshell</p>
       </TimeLineEntry>
       <TimeLineEntry title="Offer Letter" Icon={IoNewspaper} tint="green">
         <p className="text-gray-700 dark:text-gray-400">

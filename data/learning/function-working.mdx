@@ -1,0 +1,69 @@
+---
+title: Function Working!
+publishedAt: "2019-01-01"
+summary: How the to create objects, update objects, access object and add to the objects in the javascript How the to create objects, update objects, access object and add to the objects in the javascript
+section: javascript
+image: javascript-objects.png
+tags: ["objects", "javascript"]
+---
+
+### Key list
+
+1. **Thread**
+2. **Global execution context**
+3. **Function Execution context**
+4. **CallStack**
+
+#### Thread
+
+- javascript is a single threaded
+- Execution is done line by line
+
+### Global execution context (GEC)
+
+- This is the default execution context in which JS code start its execution when the file first loads in the browser.
+- All of the global code  i.e. code which is not inside any function or object is executed inside the global execution context.
+- Only one GEC because JS engine is single threaded.
+
+### Function Execution context (FEC)
+
+- Every time a function is invoked(called), a brand new execution context is created for that function.
+- Each function has its own execution context, but it’s created when the function is invoked or called.
+- There can be any number of function execution contexts. Whenever a new execution context is created,
+
+### CallStack
+
+- The one which keeps track of the function call's
+- GEC is the at the bottom of the CallStack
+- when new FEC is created it pushes on top of the CallStack will learn more about CallStack with eg below.
+
+#### Let’s understand **How Function works in javascript**
+
+```js
+function multiplyTwo(number) {
+  let result = number * 2;
+  return result;
+}
+function multiplyThree(number) {
+  let result = number * 3;
+  return result;
+}
+console.log(multiplyTwo(5));
+console.log(multiplyThree(6));
+```
+
+```js
+let a = 'Hello World!';
+function first() {
+  console.log('Inside first function');
+  second();
+  console.log('Again inside first function');
+}
+function second() {
+  console.log('Inside second function');
+}
+first();
+console.log('Inside Global Execution Context');
+```
+
+<Image alt={`It explains about the function execution`} src={`/images/learning/function.gif`} width={700} height={400} priority />
