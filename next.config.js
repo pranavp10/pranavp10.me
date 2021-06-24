@@ -6,6 +6,7 @@ module.exports = {
   webpack: (config, { dev, isServer }) => {
     if (isServer) {
       require('./scripts/generate-sitemap');
+      require('./scripts/javascript-feeds');
     }
     if (!dev && !isServer) {
       Object.assign(config.resolve.alias, {
