@@ -5,7 +5,7 @@ const matter = require('gray-matter');
 
 async function generate() {
   const feed = new RSS({
-    title: 'Lee Robinson',
+    title: 'Pranav Patel',
     site_url: 'https://pranavp10.me',
     feed_url: 'https://pranavp10.me/javascript.xml',
   });
@@ -26,7 +26,7 @@ async function generate() {
     })
   );
 
-  await fs.writeFile('./public/feed.xml', feed.xml({ indent: true }));
+  await fs.writeFile('./public/javascript.xml', feed.xml({ indent: true }));
 }
 
 generate();
