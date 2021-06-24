@@ -6,7 +6,14 @@ const prettier = require('prettier');
 
 (async () => {
   const prettierConfig = await prettier.resolveConfig('./.prettierrc.js');
-  const pages = await globby(['src/pages/**/*{.js,.mdx}', '!src/pages/_*.js', '!src/pages/api']);
+  const pages = await globby([
+    'src/pages/*.js',
+    'data/**/*.mdx',
+    '!data/*.mdx',
+    '!src/pages/_*.js',
+    '!src/pages/api',
+    '!src/pages/404.js',
+  ]);
 
   const sitemap = `
         <?xml version="1.0" encoding="UTF-8"?>
@@ -23,7 +30,7 @@ const prettier = require('prettier');
                 const route = path === '/index' ? '' : path;
                 return `
                         <url>
-                            <loc>${`https://pranavp10.now.sh${route}`}</loc>
+                            <loc>${`https://pranavp10.me${route}`}</loc>
                         </url>
                     `;
               })
