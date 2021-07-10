@@ -1,5 +1,5 @@
 import DateEntry from './dateEntry';
-import timelineEntry from './timelineEntry';
+import TimeLineEntry from './timelineEntry';
 import Timeline from './timeline';
 
-export { DateEntry, timelineEntry, Timeline };
+export { DateEntry, TimeLineEntry, Timeline };

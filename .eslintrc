@@ -53,6 +53,10 @@
             "./src/hooks"
           ],
           [
+            "@/data",
+            "./data"
+          ],
+          [
             "@/api",
             "./src/api"
           ]
