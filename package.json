@@ -10,7 +10,7 @@
     "lint:fix": "eslint --fix src/**"
   },
   "dependencies": {
-    "@mdx-js/react": "^1.6.22",
+    "@mdx-js/react": "1.6.22",
     "@tailwindcss/forms": "0.2.1",
     "@tailwindcss/line-clamp": "0.2.1",
     "@tailwindcss/typography": "0.4.1",
