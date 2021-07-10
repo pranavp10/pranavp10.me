@@ -4,6 +4,8 @@ import { IoNewspaper } from 'react-icons/io5';
 import { SiVisualstudiocode } from 'react-icons/si';
 import { BiBuildings, BiSpreadsheet } from 'react-icons/bi';
 import { GiPathDistance } from 'react-icons/gi';
+import Link from 'next/link';
+import { RoughNotation } from 'react-rough-notation';
 import DateEntry from './dateEntry';
 import TimeLineEntry from './timelineEntry';
 
@@ -35,9 +37,11 @@ export default function Timeline() {
       <TimeLineEntry title="Frontend Libraries" Icon={FaBoxOpen} tint="red">
         <p className="text-gray-700 dark:text-gray-400">
           Best{' '}
-          <a target="_black" rel="noopener" className="underline" href="https://libraries.now.sh/">
-            Frontend Libraries
-          </a>{' '}
+          <RoughNotation type="highlight" show color="#BAE6FD" iterations={1}>
+            <Link href="/libraries">
+              <a>Frontend Libraries</a>
+            </Link>
+          </RoughNotation>{' '}
           which are used by professionals working at facebook, Google, Microsoft and many other top
           companies.
         </p>
