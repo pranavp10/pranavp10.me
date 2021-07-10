@@ -13,8 +13,8 @@ const Why = () => (
         place? " Awesome right? So this is where that thought landed.
       </li>
     </ol>
-    <div className="space-y-2 mt-4">
-      <CheckMark text="Used in Production" tried />
+    <div className="space-y-1 mt-4">
+      <CheckMark text="Used in production" tried />
       <CheckMark text="Still need to learn & try" />
     </div>
   </div>

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const CheckMark = ({ text, tried }) => (
-  <div className="flex items-center space-x-2 mb-2">
+  <div className="flex items-center space-x-1">
     <div className={`${tried ? 'text-green-500' : 'text-red-500'}`}>
       {tried ? (
         <svg
