@@ -1,5 +1,5 @@
-import { SEO } from '@/components/utils';
-import { Hero, Libraries, Why, Who } from '@/components/libraries';
+import { SEO, Hero } from '@/components/utils';
+import { Libraries, Why, Who } from '@/components/libraries';
 
 const LibrariesPage = () => (
   <>
@@ -9,7 +9,11 @@ const LibrariesPage = () => (
       imageUrl="https://pranavp10.me/static/libraries.png"
       slug="/libraries"
     />
-    <Hero />
+    <Hero
+      title="Frontend Libraries"
+      description="Best Frontend Libraries which are used by professionals working at facebook, Google,
+        Microsoft and many other top companies."
+    />
     <Why />
     <Libraries />
     <Who />
