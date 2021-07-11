@@ -30,7 +30,7 @@ const BlogLayout = ({ children, frontMatter }) => (
           {frontMatter.readingTime.text}
         </p>
       </div>
-      <div className="prose dark:prose-dark max-w-none w-full">{children}</div>
+      <div className="prose dark:prose-dark md:prose-lg lg:prose-xl prose-blue">{children}</div>
       <div className="text-right mt-4 w-full">
         <div className="text-sm text-gray-700 dark:text-gray-300">
           <a

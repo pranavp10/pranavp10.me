@@ -37,7 +37,7 @@ export default function Timeline() {
       <TimeLineEntry title="Frontend Libraries" Icon={FaBoxOpen} tint="red">
         <p className="text-gray-700 dark:text-gray-400">
           Best{' '}
-          <RoughNotation type="highlight" show color="#BAE6FD" iterations={1}>
+          <RoughNotation type="highlight" show color="#BAE6FD">
             <Link href="/libraries">
               <a>Frontend Libraries</a>
             </Link>
@@ -48,15 +48,22 @@ export default function Timeline() {
       </TimeLineEntry>
       <TimeLineEntry title="My Code editor" Icon={SiVisualstudiocode} tint="blue">
         <p className="text-gray-700 dark:text-gray-400">
-          A code editor for Frontend development that improves your efficiency.
+          <RoughNotation type="highlight" show color="#BAE6FD">
+            <Link href="/mycodeeditor">
+              <a>My code editor</a>
+            </Link>
+          </RoughNotation>{' '}
+          for Frontend development that improves your efficiency.
         </p>
       </TimeLineEntry>
       <TimeLineEntry title="Dev Env" Icon={AiOutlineCode} tint="gray">
         <p className="text-gray-700 dark:text-gray-400">
-          Developed the first website which will help the developers to setup the{' '}
-          <a target="_black" rel="noopener" className="underline" href="https://devenv.now.sh/">
-            dev environment
-          </a>
+          Will help the developers to setup the{' '}
+          <RoughNotation type="highlight" show color="#BAE6FD">
+            <Link href="/devenv">
+              <a>dev environment</a>
+            </Link>
+          </RoughNotation>{' '}
           .
         </p>
       </TimeLineEntry>
