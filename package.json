@@ -54,7 +54,7 @@
     "globby": "11.0.2",
     "husky": "5.0.9",
     "lint-staged": "10.5.4",
-    "prettier": "2.2.1",
+    "prettier": "2.3.2",
     "rss": "1.2.2"
   }
 }
