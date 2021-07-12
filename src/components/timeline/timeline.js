@@ -37,7 +37,7 @@ export default function Timeline() {
       <TimeLineEntry title="Frontend Libraries" Icon={FaBoxOpen} tint="red">
         <p className="text-gray-700 dark:text-gray-400">
           Best{' '}
-          <RoughNotation type="highlight" show color="#BAE6FD">
+          <RoughNotation type="highlight" show color="#feb6b6">
             <Link href="/libraries">
               <a>Frontend Libraries</a>
             </Link>
@@ -48,7 +48,7 @@ export default function Timeline() {
       </TimeLineEntry>
       <TimeLineEntry title="My Code editor" Icon={SiVisualstudiocode} tint="blue">
         <p className="text-gray-700 dark:text-gray-400">
-          <RoughNotation type="highlight" show color="#BAE6FD">
+          <RoughNotation type="highlight" show color="#91a7ef">
             <Link href="/mycodeeditor">
               <a>My code editor</a>
             </Link>
@@ -59,7 +59,7 @@ export default function Timeline() {
       <TimeLineEntry title="Dev Env" Icon={AiOutlineCode} tint="gray">
         <p className="text-gray-700 dark:text-gray-400">
           Will help the developers to setup the{' '}
-          <RoughNotation type="highlight" show color="#BAE6FD">
+          <RoughNotation type="highlight" show color="#bfbfbf">
             <Link href="/devenv">
               <a>dev environment</a>
             </Link>
