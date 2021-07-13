@@ -10,10 +10,11 @@ const MyCodeEditor = () => (
       slug="/mycodeeditor"
     />
     <Hero
-      title="My Code Editor as Frontend developer"
+      title="My Code Editor"
       description="Edit Code like a Pro Frontend developer. A code editor for Frontend development that improves your
             efficiency."
       button={{ name: 'Download', href: `https://code.visualstudio.com/download` }}
+      color="#91a7ef"
     />
     <Extension />
     <Settings />

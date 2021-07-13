@@ -9,6 +9,7 @@ const Gist = () => {
         <p className="text-sm text-gray-500">VS Code JSON settings</p>
         <button
           onClick={() => {
+            navigator.clipboard.writeText(config);
             setCopy(true);
             setTimeout(() => {
               setCopy(false);
