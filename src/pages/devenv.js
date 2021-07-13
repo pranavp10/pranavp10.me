@@ -12,6 +12,7 @@ const DevEnv = () => (
     <Hero
       title="Development .env setup"
       description="Increase the Development Productivity by 10x"
+      color="#bfbfbf"
     />
     <Why />
     <OS />

@@ -4,7 +4,7 @@ const IconText = ({ text }) => (
   <div className="flex items-center space-x-1">
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="h-5 w-5 text-blue-500"
+      className="h-5 w-5 text-gray-500"
       viewBox="0 0 20 20"
       fill="currentColor">
       <path

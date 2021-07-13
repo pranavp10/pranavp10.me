@@ -1,10 +1,13 @@
+import Link from 'next/link';
+import { RoughNotation } from 'react-rough-notation';
+
 const OS = () => (
   <div className="flex items-center">
     <div>
       <h6 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-4 text-black dark:text-white flex items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-10 w-10 text-blue-500"
+          className="h-10 w-10 text-gray-500"
           viewBox="0 0 20 20"
           fill="currentColor">
           <path
@@ -17,17 +20,36 @@ const OS = () => (
       </h6>
       <ul className="text-md text-gray-600 mb-8 dark:text-gray-100 list-disc ml-5">
         <li>
-          Since I am using Ubuntu, I will be using terminal a lot. So I wanted the bash shell to be
-          customized.
+          I Use VS Code as an editor as its light weight, as it uses plugin system. Installing too
+          many plugin will lead to RAM consumption
         </li>
         <li>
-          ( because I am concerned about time, I wanted time to be reflected on my terminal and get
-          many more features ) to make typing fast and easy, I came across oh my zsh to customize
-          the bash shell and change it according to my requirement.
+          I am very particular about the extensions. I always do some research before installing so
+          that it will consume less RAM
         </li>
         <li>
-          I customized it by reading some blogs and watching some videos. Take a look at my gallery
-          for more images and gif's
+          Take a look at{' '}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/pranavp10/pranavp10.me/tree/main/public/gallery/vscode">
+            <RoughNotation type="highlight" show color="#bfbfbf">
+              <b>my gallery</b>
+            </RoughNotation>
+          </a>{' '}
+          for more images, how it looks and feels to make our life more easier and focus on code
+          rather than unwanted things
+        </li>
+        <li>
+          Check out the{' '}
+          <Link href="/mycodeeditor">
+            <a>
+              <RoughNotation type="highlight" show color="#bfbfbf">
+                <b>VsCode extension</b>
+              </RoughNotation>
+            </a>
+          </Link>{' '}
+          that i use day today
         </li>
       </ul>
     </div>
