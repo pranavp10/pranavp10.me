@@ -219,6 +219,13 @@ const UiLibraryData = [
 ];
 const UtilityData = [
   {
+    githubLink: 'https://github.com/linkstrifer/react-rough-notation',
+    website: 'https://roughnotation.com/',
+    name: 'Rough Notation',
+    path: 'icons/react-rough-notation.png',
+    tried: true,
+  },
+  {
     githubLink: 'https://github.com/elrumordelaluz/reactour',
     website: 'https://reactour.js.org/',
     name: 'Reactour',
