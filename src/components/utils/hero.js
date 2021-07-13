@@ -1,12 +1,15 @@
 import PropType from 'prop-types';
+import { RoughNotation } from 'react-rough-notation';
 
-const Hero = ({ title, description, button }) => (
+const Hero = ({ title, description, button, color }) => (
   <div className="pt-32">
     <div className="text-center">
       <h1
         className="text-5xl font-extrabold leading-tighter tracking-tighter mb-4"
         data-aos="zoom-y-out">
-        {title}
+        <RoughNotation type="highlight" show color={color || '#BAE6FD'}>
+          {title}
+        </RoughNotation>
       </h1>
       <h2
         className="text-md text-gray-600 mb-8 dark:text-gray-100 max-w-xl mx-auto"
@@ -32,5 +35,6 @@ Hero.propTypes = {
   title: PropType.string,
   description: PropType.string,
   button: PropType.object,
+  color: PropType.string,
 };
 export default Hero;

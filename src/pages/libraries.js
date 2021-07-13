@@ -13,6 +13,7 @@ const LibrariesPage = () => (
       title="Frontend Libraries"
       description="Best Frontend Libraries which are used by professionals working at facebook, Google,
         Microsoft and many other top companies."
+      color="#feb6b6"
     />
     <Why />
     <Libraries />
