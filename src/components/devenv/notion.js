@@ -1,10 +1,12 @@
+import { RoughNotation } from 'react-rough-notation';
+
 const Notion = () => (
   <div className="flex items-center">
     <div>
       <h6 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-4 text-black dark:text-white flex items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-10 w-10 text-blue-500"
+          className="h-10 w-10 text-gray-500"
           viewBox="0 0 20 20"
           fill="currentColor">
           <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
@@ -18,13 +20,18 @@ const Notion = () => (
       </h6>
       <ul className="text-md text-gray-600 mb-2 dark:text-gray-100 list-disc ml-5">
         <li>
-          Its Second brain all the thoughts and all the progress, development and many more will be
+          Its second brain all the thoughts and all the progress, development and many more will be
           written in this notes.
         </li>
-        <li>I had all the plans described for building the present website devenv.now.sh.</li>
+        <li>I had all the plans described for building the present website.</li>
         <li>
-          I use the mobile version as it is synced when every I open Laptop website to read the
-          feature their are hell lots of features.
+          Check out{' '}
+          <a target="_blank" rel="noopener noreferrer" href="https://www.notion.so/">
+            <RoughNotation type="highlight" show color="#bfbfbf">
+              <b>Notion</b>
+            </RoughNotation>
+          </a>{' '}
+          now.
         </li>
       </ul>
     </div>

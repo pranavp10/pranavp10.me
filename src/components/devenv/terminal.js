@@ -1,12 +1,13 @@
 import Image from 'next/image';
+import { RoughNotation } from 'react-rough-notation';
 
 const OS = () => (
-  <div className="flex items-center">
+  <div className="sm:flex sm:items-center">
     <div>
       <h6 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-4 text-black dark:text-white flex items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-10 w-10 text-blue-500"
+          className="h-10 w-10 text-gray-500"
           viewBox="0 0 20 20"
           fill="currentColor">
           <path
@@ -15,7 +16,7 @@ const OS = () => (
             clipRule="evenodd"
           />
         </svg>
-        Operating System
+        Terminal
       </h6>
       <ul className="text-md text-gray-600 mb-8 dark:text-gray-100 list-disc ml-5">
         <li>
@@ -28,7 +29,15 @@ const OS = () => (
           the bash shell and change it according to my requirement.
         </li>
         <li>
-          I customized it by reading some blogs and watching some videos. Take a look at my gallery
+          I customized it by reading some blogs and watching some videos. Take a look at my{' '}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/pranavp10/pranavp10.me/tree/main/public/gallery/Terminal">
+            <RoughNotation type="highlight" show color="#bfbfbf">
+              <b>gallery</b>
+            </RoughNotation>
+          </a>{' '}
           for more images and gif's
         </li>
       </ul>
