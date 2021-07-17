@@ -9,8 +9,13 @@ import { NavBar, Footer } from '@/components/utils';
 import Head from 'next/head';
 import { MDXProvider } from '@mdx-js/react';
 import MDXComponents from '@/components/blog/MDXComponents';
+import { useRouter } from 'next/router';
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+  const { pathname } = router;
+
+  const noNav = ['/login'];
   return (
     <ThemeProvider attribute="class">
       <Head>
@@ -18,11 +23,11 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <DefaultSeo {...DefaultSEO} />
       <MDXProvider components={MDXComponents}>
-        <NavBar />
+        {noNav.includes(pathname) ? null : <NavBar />}
         <Container>
           <Component {...pageProps} />
         </Container>
-        <Footer />
+        {noNav.includes(pathname) ? null : <Footer />}
       </MDXProvider>
     </ThemeProvider>
   );

@@ -1,4 +1,5 @@
 import { AiFillLinkedin, AiOutlineTwitter, AiFillGithub } from 'react-icons/ai';
+import DarkModeSwitch from './darkModeSwitch';
 
 const Footer = () => (
   <footer>
@@ -36,8 +37,9 @@ const Footer = () => (
             </a>
           </li>
         </ul>
-        <div className="text-md text-gray-600  dark:text-gray-100 mr-4">
+        <div className="text-md text-gray-600  dark:text-gray-100 mr-4 flex items-center">
           {new Date().getFullYear()} No &#169; copyright issue
+          <DarkModeSwitch />
         </div>
       </div>
     </div>

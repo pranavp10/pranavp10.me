@@ -7,7 +7,11 @@ module.exports = {
     purgeLayersByDefault: true,
   },
   darkMode: 'class',
-  theme: {},
+  theme: {
+    extend: {
+      appearance: ['hover', 'focus'],
+    },
+  },
   variants: {
     typography: ['dark'],
   },

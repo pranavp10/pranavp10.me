@@ -10,6 +10,8 @@
     "lint:fix": "eslint --fix src/**"
   },
   "dependencies": {
+    "@headlessui/react": "^1.3.0",
+    "@heroicons/react": "^1.0.2",
     "@mdx-js/react": "1.6.22",
     "@tailwindcss/forms": "0.3.3",
     "@tailwindcss/line-clamp": "0.2.1",
