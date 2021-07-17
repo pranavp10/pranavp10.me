@@ -53,9 +53,9 @@ export default function Nav() {
                 </Link>
               </li>
               <li>
-                <Link href="/login">
-                  <a className="px-3 py-1 flex items-center transition duration-150 ease-in-out bg-black text-white rounded-md mx-2">
-                    <BsShieldLockFill className="w-5 h-5" />
+                <Link href="/password/keeper">
+                  <a className="px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out ">
+                    <BsShieldLockFill className="w-5 h-5 hover:text-gray-900" />
                   </a>
                 </Link>
               </li>
