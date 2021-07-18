@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import DarkModeSwitch from './darkModeSwitch';
+import { BsShieldLockFill } from 'react-icons/bs';
 
 export default function Nav() {
   const [top, setTop] = useState(true);
@@ -53,7 +53,11 @@ export default function Nav() {
                 </Link>
               </li>
               <li>
-                <DarkModeSwitch />
+                <Link href="/password/keeper">
+                  <a className="px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out ">
+                    <BsShieldLockFill className="w-5 h-5 hover:text-gray-900" />
+                  </a>
+                </Link>
               </li>
             </ul>
           </nav>

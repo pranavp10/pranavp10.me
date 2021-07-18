@@ -9,22 +9,30 @@ import { NavBar, Footer } from '@/components/utils';
 import Head from 'next/head';
 import { MDXProvider } from '@mdx-js/react';
 import MDXComponents from '@/components/blog/MDXComponents';
+import { useRouter } from 'next/router';
+import { UserProvider } from '@auth0/nextjs-auth0';
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+  const { pathname } = router;
+
+  const noNav = ['/login'];
   return (
-    <ThemeProvider attribute="class">
-      <Head>
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-      </Head>
-      <DefaultSeo {...DefaultSEO} />
-      <MDXProvider components={MDXComponents}>
-        <NavBar />
-        <Container>
-          <Component {...pageProps} />
-        </Container>
-        <Footer />
-      </MDXProvider>
-    </ThemeProvider>
+    <UserProvider>
+      <ThemeProvider attribute="class">
+        <Head>
+          <meta content="width=device-width, initial-scale=1" name="viewport" />
+        </Head>
+        <DefaultSeo {...DefaultSEO} />
+        <MDXProvider components={MDXComponents}>
+          {noNav.includes(pathname) ? null : <NavBar />}
+          <Container>
+            <Component {...pageProps} />
+          </Container>
+          {noNav.includes(pathname) ? null : <Footer />}
+        </MDXProvider>
+      </ThemeProvider>
+    </UserProvider>
   );
 }
 

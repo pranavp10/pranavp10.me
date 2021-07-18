@@ -5,6 +5,15 @@ body {
 }
 
 @tailwind utilities;
+
+@layer utilities{
+  .animation-delay-2000 {
+    animation-duration:2s
+  }
+  .animation-delay-4000 {
+    animation-duration:4s
+  }
+}
 .minHightResize {
   min-height: calc(100vh - 66px)!important;
 }

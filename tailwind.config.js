@@ -1,13 +1,36 @@
 /* eslint-disable global-require */
 module.exports = {
   purge: ['./src/pages/**/*.js', './src/components/**/*.js', './src/utils/getTint.js'],
-  mode: 'jit',
+  // mode: 'jit',
   future: {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
   darkMode: 'class',
-  theme: {},
+  theme: {
+    extend: {
+      animation: {
+        blob: 'blob 7s infinite',
+      },
+      keyframes: {
+        blob: {
+          '0%': {
+            transform: 'translate(0px, 0px) scale(1)',
+          },
+          '33%': {
+            transform: 'translate(30px, -50px) scale(1.1)',
+          },
+          '66%': {
+            transform: 'translate(-20px, 20px) scale(0.9)',
+          },
+          '100%': {
+            transform: 'translate(0px, 0px) scale(1)',
+          },
+        },
+      },
+      appearance: ['hover', 'focus'],
+    },
+  },
   variants: {
     typography: ['dark'],
   },
