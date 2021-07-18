@@ -1,8 +1,11 @@
+import { useUser } from '@auth0/nextjs-auth0';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { BsShieldLockFill } from 'react-icons/bs';
 
 export default function Nav() {
+  const { user, error, isLoading } = useUser();
+
   const [top, setTop] = useState(true);
   useEffect(() => {
     const scrollHandler = () => {
@@ -15,8 +18,8 @@ export default function Nav() {
 
   return (
     <header
-      className={`fixed w-full z-30   md:bg-opacity-90 transition duration-300 ease-in-out ${
-        !top && 'bg-white dark:bg-gray-900 blur shadow-lg'
+      className={`fixed w-full z-30  md:bg-opacity-90 transition duration-300 ease-in-out ${
+        !top && 'bg-white dark:bg-gray-900 shadow-lg'
       }`}>
       <div className="max-w-3xl mx-auto px-5 sm:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
@@ -29,7 +32,7 @@ export default function Nav() {
           </div>
           <nav className="md:flex md:flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
-              {/* <li>
+              <li>
                 <Link href="/learning">
                   <a className="px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">
                     Learning
@@ -44,7 +47,7 @@ export default function Nav() {
                     Blog
                   </a>
                 </Link>
-              </li> */}
+              </li>
               <li>
                 <Link href="/about">
                   <a className="px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">
@@ -53,11 +56,25 @@ export default function Nav() {
                 </Link>
               </li>
               <li>
-                <Link href="/password/keeper">
-                  <a className="px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out ">
-                    <BsShieldLockFill className="w-5 h-5 hover:text-gray-900" />
-                  </a>
-                </Link>
+                {isLoading && <div className="h-8 w-8 animate-pulse bg-gray-200 rounded-full" />}
+                {!user && !isLoading && error && (
+                  <Link href="/password/keeper">
+                    <a className="px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out ">
+                      <BsShieldLockFill className="w-5 h-5 hover:text-gray-900" />
+                    </a>
+                  </Link>
+                )}
+                {user && (
+                  <Link href="/password/dashboard">
+                    <a className="flex items-center transition duration-150 ease-in-out hover:opacity-60">
+                      <img
+                        className="inline-block h-8 w-8 rounded-full"
+                        src={user.picture}
+                        alt=""
+                      />
+                    </a>
+                  </Link>
+                )}
               </li>
             </ul>
           </nav>

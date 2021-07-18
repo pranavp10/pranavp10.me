@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const { pathname } = router;
 
-  const noNav = ['/login'];
+  const noNav = ['/login', '/password/new'];
   return (
     <UserProvider>
       <ThemeProvider attribute="class">
